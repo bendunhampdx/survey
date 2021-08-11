@@ -11,10 +11,7 @@ $(document).ready(function() {
     $(".music").text(musicInput);
     $(".color").text(colorInput);
 
-
-
-
-
+    $("body").css("background-color", colorInput);
     
     $("#output").show();
     console.log("Are we even working?")
