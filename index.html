@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel=“stylesheet” href=“css/bootstrap.css” type=“text/css”>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/styles.css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Document</title>
+  <title>Survey</title>
 </head>
 <body>
-  
+  <div class="container">
+    <h1>This is a survey</h1>
+    <form id="form">
+      <div class="form-group">
+        <h3>What is your name?</h3>
+        <label for="person1">Enter your name</label>
+        <input id="person1" class="form-control" type="text">
+      <div>
+    </form>
+    
+    <div class="radio">
+      <h3>What is your favorite food?</h3>
+      <label>
+        <input type="radio" name="food" value="allOfThem" checked>
+        All of them
+      </label>
+      <label>
+        <input type="radio" name="food" value="noFood">
+         I don't like food
+      </label>  <label>
+        <input type="radio" name="food" value="naFood">
+        N/A
+      </label>
+    </div>
+    <div>
+      <h3>Select your favorite music</h3>
+      <select class="form-control" id="music">
+        <option value="Tool">Tool</option>
+        <option value="Tool2">More Tool</option>
+        <option value="Tool3">It's Always Tool</option>  
+      <select>
+    </div>
+    <div class="form-group">
+      <label for="color">What is your favorite color?</label>
+      <input id="color" class="form-control" type="color">
+    </div>
+
+  </div>
 </body>
 </html>
