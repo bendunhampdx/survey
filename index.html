@@ -10,39 +10,44 @@
 <body>
   <div class="container">
     <h1>This is a survey</h1>
-    <form id="form">
+    <form id="survey">
       <div class="form-group">
         <h3>What is your name?</h3>
         <label for="person1">Enter your name</label>
         <input id="person1" class="form-control" type="text">
+      </div>
+      <div class="radio">
+        <h3>What is your favorite food?</h3>
+        <label>
+          <input type="radio" name="food" value="All of them" checked>
+          All of them
+        </label>
+        <label>
+          <input type="radio" name="food" value="I don't like food">
+            I don't like food
+        </label> 
+        <label>
+          <input type="radio" name="food" value="N/A">
+          N/A
+        </label>
+      </div>
       <div>
+        <h3>Select your favorite music</h3>
+        <select class="form-control" id="music">
+          <option>Tool</option>
+          <option>More Tool</option>
+          <option>It's Always Tool</option>  
+        <select>
+      </div>
+      <div class="form-group">
+        <label for="color">What is your favorite color?</label>
+        <input id="color" class="form-control" type="color">
+      </div>
+      <button type="submit" class="btn-warning">Go!</button>
     </form>
-    
-    <div class="radio">
-      <h3>What is your favorite food?</h3>
-      <label>
-        <input type="radio" name="food" value="allOfThem" checked>
-        All of them
-      </label>
-      <label>
-        <input type="radio" name="food" value="noFood">
-         I don't like food
-      </label>  <label>
-        <input type="radio" name="food" value="naFood">
-        N/A
-      </label>
-    </div>
-    <div>
-      <h3>Select your favorite music</h3>
-      <select class="form-control" id="music">
-        <option value="Tool">Tool</option>
-        <option value="Tool2">More Tool</option>
-        <option value="Tool3">It's Always Tool</option>  
-      <select>
-    </div>
-    <div class="form-group">
-      <label for="color">What is your favorite color?</label>
-      <input id="color" class="form-control" type="color">
+
+    <div id="output">
+      <p>Your name is <span class="person1"></span><br> Your favorite food is <span class="food"></span><br>Your favorite music is <span class="music"><br>Your favorite color is <span class="color"></span></p>
     </div>
 
   </div>
